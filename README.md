@@ -9,4 +9,4 @@ Inherit from GKHDelegate to receive data from Game Center (player info, scores, 
 
 GKCppAlternatives contains a set of C++ structs that can be used as alternatives to Game Kit's Objective-C classes.
 
-For a more in depth tutorial on how to use this class, see my blog post at www.stevebarnegren.com
+For a more in depth tutorial on how to use this class, see my blog post at http://www.stevebarnegren.com/1/post/2014/01/game-kit-helper-for-c-cocos2d-x.html
