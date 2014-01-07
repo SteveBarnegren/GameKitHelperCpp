@@ -263,8 +263,11 @@ static GameKitHelper *instanceOfGameKitHelper;
              //[delegate onPlayerInfoReceived:players];
              NSLog(@"about to store players");
              [self storePlayers:players];
-             std::vector<GKPlayerCpp> vector = [self convertNSArrayOfGKPlayersToCppVector:players];
-             _gkhDelegate->onPlayerInfoReceived(vector);
+             
+             if (_gkhDelegate != nullptr) {
+                 std::vector<GKPlayerCpp> vector = [self convertNSArrayOfGKPlayersToCppVector:players];
+                 _gkhDelegate->onPlayerInfoReceived(vector);
+             }
              
          }];
 	}
